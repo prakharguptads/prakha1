@@ -19,6 +19,8 @@ import {
 import { ANDROID } from './android';
 import { MACHINE } from './machine';
 import { WEB } from './web';
+import { ConfigureStore } from "./ConfigureStore";
+import { Provider } from "react-redux";
 
 
 
@@ -79,12 +81,14 @@ export class App extends Component {
         )
       )
     });
+    const store = ConfigureStore();
     return (
 
       
 
       
       <div className="App">
+        <Provider store={store}>
 <BrowserRouter>
 <Header /> 
       <Switch>
@@ -112,6 +116,7 @@ export class App extends Component {
         
         
 </BrowserRouter>
+</Provider>
 </div>
     );
   }
