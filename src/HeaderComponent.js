@@ -94,11 +94,7 @@ class Header extends Component {
                 </NavItem>
               </Nav>
               <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <Button outline onClick={this.toggleModal}>
-                    <span className="fa fa-sign-in fa-lg" /> Login
-                  </Button>
-                </NavItem>
+                
               </Nav>
             </Collapse>
           </div>
@@ -111,7 +107,7 @@ class Header extends Component {
                 <p>
                   We take inspiration from the World's best sites, and create
                   a unique fusion experience. Our creations will
-                  tickle your culinary senses!
+                  tickle your senses!
                 </p>
               </div>
             </div>
